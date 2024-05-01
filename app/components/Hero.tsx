@@ -7,10 +7,10 @@ export default function Hero() {
     <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
       <div className="col-span-1 lg:col-span-2 h-full bg-gray-100 min-h-[500px] lg:min-h-[300px] rounded-2xl p-8">
         <h1 className="text-4xl lg:text-6xl font-medium">
-          Hey I'm Farrukh Shahzad
+          Hey I am Farrukh Shahzad
         </h1>
         <h1 className="text-4xl lg:text-6xl font-normal mt-3">
-          I'm a Web Developer working and living in Pakistan
+          I am a Web Developer working and living in Pakistan
         </h1>
 
         <a
