@@ -4,6 +4,7 @@ import { client } from "../lib/sanity";
 import airbnb from "../../public/air.png"
 import eventlist from "../../public/ev1.png"
 import ab from "../../public/ab.png"
+import amazon from "../../public/amazon.png"
 
 async function getData() {
   const query = `*[_type == 'project'] {
@@ -80,6 +81,49 @@ export default async function ProjectPage() {
             <div className="aspect-w-16 aspect-h-12 overflow-hidden rounded-2xl relative">
               <Image
                 src={ab}
+                alt="Image Description"
+                fill
+                className="object-contain group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-2xl"
+              />
+            </div>
+            <div className="mt-4">
+              <h2 className="font-medium text-lg hover:underline">
+                {/* {item.title} */} Airbnb 
+              </h2>
+              <p className="text-muted-foreground mt-1 line-clamp-3">
+                {/* {item.description} */} Online marketplace for short- and long-term homestays and experiences
+              </p>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {/* {item.tags.map((tagItem, index) => (
+                  <span className="inline-flex items-center rounded-md bg-primary/10 px-3 py-1.5 text-xs sm:text-sm font-medium text-primary ring-1 ring-inset ring-primary/20">
+                    {tagItem}
+                  </span>
+                ))} */}
+                 <span className="inline-flex items-center rounded-md bg-primary/10 px-3 py-1.5 text-xs sm:text-sm font-medium text-primary ring-1 ring-inset ring-primary/20">
+                    {/* {tagItem} */}NextJs
+                  </span>
+                  <span className="inline-flex items-center rounded-md bg-primary/10 px-3 py-1.5 text-xs sm:text-sm font-medium text-primary ring-1 ring-inset ring-primary/20">
+                    {/* {tagItem} */} React
+                  </span>
+                  <span className="inline-flex items-center rounded-md bg-primary/10 px-3 py-1.5 text-xs sm:text-sm font-medium text-primary ring-1 ring-inset ring-primary/20">
+                    {/* {tagItem} */} Tailwind
+                  </span>
+                  <span className="inline-flex items-center rounded-md bg-primary/10 px-3 py-1.5 text-xs sm:text-sm font-medium text-primary ring-1 ring-inset ring-primary/20">
+                    {/* {tagItem} */}Kinde Auth
+                  </span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://amazon-redux-stripe-complete.vercel.app/"
+            
+            className="group block"
+            target="_blank"
+          >
+            <div className="aspect-w-16 aspect-h-12 overflow-hidden rounded-2xl relative">
+              <Image
+                src={amazon}
                 alt="Image Description"
                 fill
                 className="object-contain group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-2xl"
